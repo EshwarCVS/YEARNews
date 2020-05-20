@@ -1,0 +1,7 @@
+{
+  "name": "WishNews",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
