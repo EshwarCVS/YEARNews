@@ -13,17 +13,17 @@ import { IonReactRouter } from "@ionic/react-router";
 import {
   newspaperOutline,
   searchOutline,
-  createOutline,
   personCircleOutline,
+  createOutline,
   trendingUpOutline,
 } from "ionicons/icons";
 import News from "./pages/Tabs/News";
 import Trending from "./pages/Tabs/Trending";
+import Submit from "./pages/Tabs/Submit";
 import Search from "./pages/Tabs/Search";
 import Profile from "./pages/Tabs/Profile";
-import Submit from "./pages/Tabs/Submit";
-import SignUp from "./pages/Auth/SignUp";
 import EditProfile from "./pages/Auth/EditProfile";
+import Signup from "./pages/Auth/Signup";
 import Login from "./pages/Auth/Login";
 import Forgot from "./pages/Auth/Forgot";
 
@@ -58,7 +58,7 @@ const App = () => (
           <Route path="/search" component={Search} />
           <Route path="/profile" component={Profile} />
           <Route path="/edit-profile" component={EditProfile} />
-          <Route path="/register" component={SignUp} />
+          <Route path="/register" component={Signup} />
           <Route path="/login" component={Login} />
           <Route path="/forgot" component={Forgot} />
           <Route component={() => <Redirect to="/news" />} />
